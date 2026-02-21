@@ -609,3 +609,49 @@ html {
         font-size: 1.1rem;
     }
 }
+
+/* Visitor Map */
+.visitor-map {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: var(--bg-primary);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    max-width: 800px;
+}
+
+.visitor-map h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--bg-secondary);
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--text-secondary);
+    border-top: 1px solid var(--border-color);
+}
+
+.footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .visitor-map {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    .visitor-map h3 {
+        font-size: 1.2rem;
+    }
+}
