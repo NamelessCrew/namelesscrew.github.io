@@ -1,0 +1,163 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║                    🎓 WENBO YU'S ACADEMIC HOMEPAGE                           ║
+║                         Personal Website - Ready!                            ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📍 LOCATION: /Users/wenbo_yu/my-homepage/
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  ✨ QUICK START                                                             ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  1. Preview Your Site
+     ┌────────────────────────────────────────┐
+     │  cd ~/my-homepage                      │
+     │  ./preview.sh                          │
+     │  Open: http://localhost:8000           │
+     └────────────────────────────────────────┘
+
+  2. Deploy to GitHub
+     ┌────────────────────────────────────────┐
+     │  ./deploy.sh                           │
+     │  Enable Pages in GitHub Settings       │
+     └────────────────────────────────────────┘
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  📚 YOUR HOMEPAGE CONTENT                                                   ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  👤 PERSONAL INFO
+     • Name: Wenbo Yu (余文博)
+     • Institution: Renmin University of China
+     • Lab: GeWu-Lab
+     • Position: Fourth Year PhD Student
+     • Advisor: Prof. Di Hu
+     • Education: B.S. Software Engineering, Jilin University (2022)
+
+  🔬 RESEARCH INTERESTS
+     • Generalizable Robotic Manipulation
+     • Embodied AI
+     • Sim-to-Real Transfer
+     • Continual Learning
+     • Robot Learning
+
+  📄 FEATURED PUBLICATION
+     ┌─────────────────────────────────────────────────────────────────┐
+     │  🎉 GeCo-SRT (CVPR 2026 - ACCEPTED!)                            │
+     │                                                                  │
+     │  Title: GeCo-SRT: Geometry-aware Continual Adaptation for       │
+     │         Cross-Task Sim-to-Real Transfer                         │
+     │                                                                  │
+     │  Authors: Wenbo Yu, Wenke Xia, Weitao Zhang, Di Hu              │
+     │                                                                  │
+     │  Highlights:                                                     │
+     │  ✓ 52% performance improvement over baselines                   │
+     │  ✓ Reduced data requirements to 16.7%                           │
+     │  ✓ Human-in-the-loop continual learning framework               │
+     └─────────────────────────────────────────────────────────────────┘
+
+  🚀 PROJECTS
+     1. Wildlife Protection with AI
+        - Second Prize, China Innovation Competition 2024
+        - Deep learning for infrared wildlife tracking
+     
+     2. Secure Reinforcement Learning with CBF
+        - Safe trajectory planning & risk-aware decision making
+        - Actor-Critic with Control Barrier Functions
+
+  🏆 AWARDS & HONORS
+     • First Class Scholarship (Top 1%) - 2024
+     • Second Prize, Innovation Competition - 2024
+     • Third Prize, "TI Cup" Electronic Design - 2024 & 2025
+     • Science & Technology Innovation Scholarship - 2024
+
+  📧 CONTACT
+     • Email: uiversalmariner@gmail.com
+     • Phone: +86 18268258166
+     • WeChat: universalmariner
+     • GitHub: @universalmariner
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  📂 FILES INCLUDED                                                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  ✅ index.html          - Main homepage (English, 14KB)
+  ✅ CV_Wenbo_Yu.pdf     - Your curriculum vitae (105KB)
+  ✅ css/style.css       - Modern stylesheet
+  ✅ js/script.js        - Interactive features
+  ✅ preview.sh          - Local preview script
+  ✅ deploy.sh           - One-click deployment
+  ✅ README.md           - Documentation
+  ✅ START_HERE.md       - Quick guide
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  🎨 NEXT STEPS                                                              ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  📸 OPTIONAL: Add Real Photos
+     ┌────────────────────────────────────────────────────────────┐
+     │  # Replace placeholder images with real photos             │
+     │  cp /path/to/photo.jpg images/profile.jpg                  │
+     │  cp /path/to/paper.jpg images/geco-srt.jpg                 │
+     │                                                             │
+     │  Currently using: https://via.placeholder.com              │
+     └────────────────────────────────────────────────────────────┘
+
+  🔗 WHEN AVAILABLE: Update Links
+     • arXiv link for GeCo-SRT
+     • GitHub code repository
+     • Project website
+     • Google Scholar profile
+
+  🌐 DOMAIN (OPTIONAL)
+     • Use: yourusername.github.io
+     • Or setup custom domain (your-name.com)
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  ✨ FEATURES                                                                ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  ✓ Professional English academic style
+  ✓ CVPR 2026 acceptance highlighted with 🎉
+  ✓ Responsive design (mobile + desktop)
+  ✓ Smooth scrolling & auto-highlight navigation
+  ✓ Elegant animations & transitions
+  ✓ Based on your actual CV content
+  ✓ SEO optimized with meta tags
+  ✓ Fast loading (pure HTML/CSS/JS)
+  ✓ Easy to maintain & update
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  📖 DOCUMENTATION                                                           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  Read these for more info:
+  • START_HERE.md       - Quick reference (this is you!)
+  • README.md           - Full documentation
+  • QUICKSTART.md       - Detailed deployment guide
+  • CUSTOMIZATION.md    - Styling & content customization
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  🎯 SUMMARY                                                                 ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  Your professional academic homepage is READY! 🎉
+
+  Main highlights:
+  • English language ✅
+  • CVPR 2026 paper featured ✅
+  • All CV content included ✅
+  • Modern & responsive design ✅
+  • Ready to deploy ✅
+
+  Start with: ./preview.sh
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║              🎊 CONGRATULATIONS ON YOUR CVPR 2026 ACCEPTANCE! 🎊            ║
+║                                                                              ║
+║                    Run ./preview.sh to see your site!                        ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝

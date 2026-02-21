@@ -1,0 +1,205 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║                    ✅ 主页内容和图片已更新完成！                             ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📍 更新时间: 2026年2月21日
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  🔄 本次更新内容                                                            ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  ✅ 1. 更新 News 部分
+     • 2024-12 新闻改为：
+       "Started research at GeWu-Lab, Renmin University of China 
+        as a Research Assistant"
+     • 明确标注了 RA 身份
+
+  ✅ 2. 项目描述更新
+     • Project 1: Wildlife Protection with AI
+       - 描述改为："Optimized deep learning models for wildlife 
+         classification and tracking in infrared imagery..."
+       - 图片：images/wildlife.png（野生动物 AI 图片）
+     
+     • Project 2: Safe Reinforcement Learning
+       - 标题改为："Safe Reinforcement Learning"
+       - 图片：images/safe-rl.png（安全强化学习图片）
+     
+     • Project 3: Lithium Battery Management System（新增）⭐
+       - 标题："Lithium Battery Management System"
+       - 时间：Sep 2024 - Jan 2025
+       - 描述：STM32-based 18650 battery management system with 
+         IoT monitoring, IP5508 power management, INA3221 monitoring,
+         ESP-12S Wi-Fi, WeChat Mini Program
+
+  ✅ 3. Education 部分更新
+     • 移除了 GPA 和 Rank 信息
+     • 只保留："Major in Automation."
+
+  ✅ 4. 图片更新
+     • 个人照片：images/profile.heic（IMG_5546.heic）
+     • GeCo-SRT：images/geco-srt.png（image.png）
+     • Wildlife AI：images/wildlife.png（Gemini图片）
+     • Safe RL：images/safe-rl.png（Gemini图片）
+     • RUC Logo：images/ruc-logo.jpg（中国人民大学标志）
+     • BFU：使用占位符（需要北京林业大学 logo）
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  📝 Projects 部分完整内容                                                   ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  1️⃣ Wildlife Protection with AI (May 2024 - Dec 2024)
+     ┌─────────────────────────────────────────────────────────────┐
+     │  • 深度学习模型优化                                          │
+     │  • 红外图像野生动物分类与跟踪                                │
+     │  • 野外监测设备部署                                          │
+     │  • 大规模数据预处理                                          │
+     └─────────────────────────────────────────────────────────────┘
+
+  2️⃣ Safe Reinforcement Learning (May 2024 - Jan 2025)
+     ┌─────────────────────────────────────────────────────────────┐
+     │  • Actor-Critic 架构增强                                     │
+     │  • 集成 Control Barrier Functions (CBF)                     │
+     │  • Risk-aware 模型                                           │
+     │  • 复杂环境中的安全轨迹规划                                  │
+     │  • Advisor: Prof. Junguo Zhang                              │
+     └─────────────────────────────────────────────────────────────┘
+
+  3️⃣ Lithium Battery Management System (Sep 2024 - Jan 2025) ⭐ 新增
+     ┌─────────────────────────────────────────────────────────────┐
+     │  • 基于 STM32 的 18650 锂电池管理系统                       │
+     │  • IP5508 电源管理芯片                                       │
+     │  • INA3221 多通道监测                                        │
+     │  • ESP-12S Wi-Fi 模块物联网通信                             │
+     │  • 微信小程序远程数据传输                                    │
+     │  • 充放电管理与实时监控                                      │
+     └─────────────────────────────────────────────────────────────┘
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  🖼️ 图片文件映射                                                           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  原文件 → 使用位置
+  ├── IMG_5546.heic 
+  │   → images/profile.heic (个人照片)
+  │
+  ├── image.png 
+  │   → images/geco-srt.png (GeCo-SRT 论文图片)
+  │
+  ├── Gemini_Generated_Image_fwalljfwalljfwal.png
+  │   → images/wildlife.png (野生动物保护项目)
+  │
+  ├── Gemini_Generated_Image_d7sc49d7sc49d7sc.png
+  │   → images/safe-rl.png (安全强化学习项目)
+  │
+  └── 标志(彩色).jpg
+      → images/ruc-logo.jpg (中国人民大学 - Experience部分)
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  📱 当前页面结构                                                            ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  导航栏:
+  [Home] [News] [Publications] [Projects] [Experience] [Awards]
+
+  🏠 Home
+     ├── 照片：个人照片 (IMG_5546.heic)
+     ├── 姓名：Wenbo Yu (余文博)
+     ├── 身份：北京林业大学大三学生
+     ├── 实验室：GeWu-Lab 成员
+     └── 研究：Robotic Manipulation & Learning
+
+  📰 News
+     ├── CVPR 2026（红色高亮）
+     ├── CHI 2025（红色高亮）
+     └── GeWu-Lab RA（2024-12）✅ 更新
+
+  📄 Publications
+     ├── 图片：GeCo-SRT 论文图 (image.png)
+     ├── Wenbo Yu（蓝色高亮）
+     └── CVPR 2026（红色高亮）
+
+  🚀 Projects (3个项目)
+     ├── 1. Wildlife AI
+     │   └── 图片：野生动物 AI（Gemini图）✅
+     ├── 2. Safe RL
+     │   └── 图片：安全强化学习（Gemini图）✅
+     └── 3. Battery Management System ⭐ 新增
+         └── 图片：占位符（需要BMS相关图片）
+
+  🎓 Experience
+     ├── GeWu-Lab RA
+     │   └── 图片：人大标志 ✅
+     └── BFU 本科
+         └── 图片：占位符（需要北林标志）
+
+  🏆 Awards（保持不变）
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  ⚠️ 注意事项                                                               ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  1. HEIC 格式照片
+     • 浏览器对 HEIC 格式支持有限
+     • 建议转换为 JPG 或 PNG 格式
+     • 转换命令（Mac）：
+       sips -s format jpeg images/profile.heic --out images/profile.jpg
+
+  2. 缺少的图片
+     • 北京林业大学 logo（BFU）
+     • 可以从学校官网下载或使用占位符
+
+  3. Battery Management System 项目
+     • 可以考虑添加项目相关图片（电路板、界面等）
+     • 或使用系统架构图
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  🔧 建议的后续操作                                                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  1. 转换 HEIC 照片为 JPG
+     cd ~/my-homepage/images
+     sips -s format jpeg profile.heic --out profile.jpg
+     
+     然后更新 HTML：
+     <img src="images/profile.jpg" alt="Wenbo Yu">
+
+  2. 添加北京林业大学 logo
+     • 下载 BFU logo
+     • 保存为 images/bfu-logo.jpg
+     • 更新 Experience 部分图片路径
+
+  3. 添加 BMS 项目图片
+     • 如果有项目照片或系统图，添加到 images/bms.jpg
+     • 更新项目图片路径
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  📱 立即预览                                                                ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  运行预览:
+  ┌────────────────────────────────────────┐
+  │  cd ~/my-homepage                      │
+  │  ./preview.sh                          │
+  │                                        │
+  │  访问: http://localhost:8000           │
+  └────────────────────────────────────────┘
+
+  检查内容:
+  ✓ News 部分的 RA 标注
+  ✓ Projects 部分的三个项目
+  ✓ Safe RL 项目图片
+  ✓ Battery Management System 项目（新增）
+  ✓ Education 部分移除 GPA
+  ✓ 所有图片是否正确显示
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║                   🎉 主页内容和图片已全部更新！                              ║
+║                                                                              ║
+║                 包含三个项目 + 真实图片 + RA身份                             ║
+║                                                                              ║
+║                 运行 ./preview.sh 查看最新效果                               ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
