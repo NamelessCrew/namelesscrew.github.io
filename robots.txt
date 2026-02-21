@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://astrobo.github.io/sitemap.xml
+Sitemap: https://namelesscrew.github.io/sitemap.xml
 
 # Allow search engines to crawl all pages
 User-agent: Googlebot

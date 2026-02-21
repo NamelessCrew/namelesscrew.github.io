@@ -1,125 +1,324 @@
-# Wenbo Yu - Personal Academic Homepage
+# 🌐 Wenbo Yu's Academic Homepage
 
-Personal academic homepage showcasing research, publications, and projects.
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success)](https://namelesscrew.github.io/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Last Updated](https://img.shields.io/badge/Updated-Feb%202026-brightgreen)](https://namelesscrew.github.io/)
 
-## 🎓 About
+> 🎓 Personal academic homepage for Wenbo Yu (余文博)  
+> 🤖 Research interests: Robotic Manipulation & Robot Learning  
+> 🎉 CVPR 2026 paper accepted!
 
-This is the personal homepage of **Wenbo Yu (余文博)**, a fourth year PhD student in GeWu-Lab at Gaoling School of Artificial Intelligence, Renmin University of China, advised by Prof. Di Hu.
+**Live Site**: [https://namelesscrew.github.io/](https://namelesscrew.github.io/)
 
-**Research Interests:**
-- Generalizable Robotic Manipulation
-- Embodied AI
-- Sim-to-Real Transfer
-- Continual Learning
-- Robot Learning
+---
 
-**Education:**
-- PhD in Artificial Intelligence, Renmin University of China (2022 - Present)
-- B.S. in Software Engineering, Jilin University (2022)
+## 📋 About This Site
 
-## 📄 Highlights
+This is my personal academic homepage built with pure HTML, CSS, and JavaScript. The site showcases:
 
-### 🎉 Latest Publication
-**GeCo-SRT: Geometry-aware Continual Adaptation for Cross-Task Sim-to-Real Transfer**
-- **Authors:** Wenbo Yu, Wenke Xia, Weitao Zhang, Di Hu
-- **Conference:** CVPR 2026 (Accepted)
-- **Key Achievements:**
-  - 52% average performance improvement over baselines
-  - Reduced data requirements to 16.7% compared to training from scratch
-  - Human-in-the-loop continual learning framework for robotic manipulation
+- 📄 **Publications** - Including CVPR 2026 accepted paper
+- 🚀 **Research Projects** - Wildlife AI, Safe RL, Battery Management System
+- 🎓 **Education & Experience** - GeWu-Lab Research Assistant, BFU undergraduate
+- 🏆 **Honors & Awards** - Scholarships and competition prizes
+- 💼 **Job Seeking** - Summer internships and PhD positions for Fall 2027
 
-### 🏆 Recent Awards
-- First Class Scholarship for Outstanding Students (Top 1%), Beijing Forestry University, 2024
-- Second Prize, China International College Students' Innovation Competition, 2024
-- Third Prize, "TI Cup" Beijing College Student Electronic Design Competition, 2024 & 2025
+---
+
+## ✨ Features
+
+- 🎨 **Modern & Responsive Design** - Works on desktop and mobile
+- ⚡ **Fast Loading** - Static site with optimized assets
+- 🔍 **SEO Optimized** - Complete meta tags, sitemap, robots.txt
+- 🎯 **Interactive Effects** - Smooth animations and hover effects
+- 🌈 **Highlighted Keywords** - Special styling for conferences, research areas
+- 🔝 **Back to Top Button** - Easy navigation
+- 📱 **Mobile Friendly** - Fully responsive layout
+
+---
 
 ## 🚀 Quick Start
 
-### Local Preview
-```bash
-cd ~/my-homepage
-./preview.sh
-```
-Then visit http://localhost:8000 in your browser.
+### View the Site
 
-### Deploy to GitHub Pages
-1. Create a GitHub repository named `yourusername.github.io`
-2. Run the deployment script:
+Simply visit: **[https://namelesscrew.github.io/](https://namelesscrew.github.io/)**
+
+### Run Locally
+
 ```bash
-./deploy.sh
+# Clone the repository
+git clone https://github.com/NamelessCrew/namelesscrew.github.io.git
+cd namelesscrew.github.io
+
+# Start local server
+./preview.sh
+
+# Or use Python
+python3 -m http.server 8000
+
+# Visit http://localhost:8000
 ```
-3. Enable GitHub Pages in repository settings
-4. Visit `https://yourusername.github.io/`
+
+---
 
 ## 📁 Project Structure
 
 ```
 my-homepage/
-├── index.html              # Main homepage (English)
-├── example.html            # Example template (Chinese)
-├── CV_Wenbo_Yu.pdf         # Curriculum Vitae
+├── index.html              # Main homepage
 ├── css/
-│   └── style.css          # Stylesheet
+│   └── style.css          # Styles and animations
 ├── js/
 │   └── script.js          # Interactive features
-├── images/                # Images folder
-│   └── README.md          # Image guidelines
-├── preview.sh             # Local preview script
+├── images/                # All images (photos, logos, projects)
+│   ├── profile-new.jpg    # Personal photo
+│   ├── geco-srt.png       # CVPR 2026 paper image
+│   ├── wildlife.png       # Wildlife AI project
+│   ├── safe-rl.png        # Safe RL project
+│   ├── bms-project.png    # Battery Management project
+│   ├── ruc-logo.jpg       # Renmin University logo
+│   └── bfu-logo.png       # Beijing Forestry University logo
+├── CV_Wenbo_Yu.pdf        # Curriculum Vitae
+├── robots.txt             # SEO: Search engine rules
+├── sitemap.xml            # SEO: Site structure
 ├── deploy.sh              # Deployment script
-└── .gitignore             # Git ignore file
+├── preview.sh             # Local preview script
+└── README.md              # This file
 ```
-
-## 📝 Customization
-
-### Update Personal Information
-Edit `index.html` to update:
-- Contact information
-- Research interests
-- Publications
-- Projects
-- Awards
-
-### Add Images
-Place the following images in the `images/` folder:
-- `profile.jpg` - Profile photo (500×500px recommended)
-- `paper1.jpg`, `paper2.jpg` - Paper figures (800×600px recommended)
-
-### Modify Colors
-Edit `css/style.css` and change CSS variables:
-```css
-:root {
-    --primary-color: #2563eb;  /* Primary theme color */
-    --text-primary: #1f2937;   /* Main text color */
-    /* ... */
-}
-```
-
-## 🔗 Contact
-
-- **Email:** uiversalmariner@gmail.com
-- **Phone:** +86 18268258166
-- **WeChat:** universalmariner
-- **GitHub:** [@universalmariner](https://github.com/universalmariner)
-
-## 📚 Documentation
-
-- `START_HERE.md` - Quick start guide
-- `QUICKSTART.md` - Detailed deployment guide
-- `CUSTOMIZATION.md` - Customization instructions
-- `PROJECT_SUMMARY.md` - Project overview
-
-## 🙏 Acknowledgments
-
-Website design inspired by:
-- [Jon Barron's website](https://jonbarron.info/)
-- [Wenke Xia's website](https://xwinks.github.io/)
-
-## 📄 License
-
-This project is open source and available under the MIT License.
 
 ---
 
-**Last Updated:** February 2026
+## 🎓 Personal Information
 
-🎉 Visit the live site: [Coming Soon]
+**Name**: Wenbo Yu (余文博)
+
+**Current Status**:
+- 🎓 Junior student at Beijing Forestry University (Automation)
+- 🔬 Research Assistant at GeWu-Lab, Renmin University of China
+- 🤝 Working with Wenke Xia and Prof. Di Hu
+
+**Research Interests**:
+- 🤖 Robotic Manipulation
+- 🧠 Robot Learning
+- 🔄 Sim-to-Real Transfer
+- 🌐 Embodied AI
+
+**Recent Achievements**:
+- 🎉 **CVPR 2026** - Paper "GeCo-SRT" accepted!
+- 🏆 **First Class Scholarship** (Top 1%) at Beijing Forestry University
+- 🥈 **Second Prize** - China International College Students' Innovation Competition
+
+**Looking For**:
+- 🌞 Summer Research Internships
+- 🎓 CS/Robotics PhD positions starting Fall 2027
+
+---
+
+## 🎨 Key Features & Styling
+
+### Special Visual Effects
+
+1. **Conference Name Badges** 🏷️
+   - Red highlighting with border and shadow
+   - Applied to: CVPR 2026, CHI 2025
+
+2. **Author Name Highlighting** 📝
+   - Blue text with light background
+   - Hover to scale effect
+   - Applied to: Wenbo Yu in publications
+
+3. **Keyword Emphasis** 🔑
+   - Blue background with hover animation
+   - Applied to: Robotic Manipulation, Robot Learning
+
+4. **Interactive Links** 🔗
+   - Underline expand animation on hover
+   - Applied to: GeWu-Lab, collaborators, institutions
+
+5. **Job Seeking Banner** 💼
+   - Purple gradient background with glow animation
+   - Prominently displays internship/PhD opportunities
+
+6. **Back to Top Button** ⬆️
+   - Appears after scrolling 300px
+   - Smooth scroll to top
+
+---
+
+## 🔧 Customization
+
+### Update Content
+
+Edit `index.html` to modify:
+- Personal information
+- News and publications
+- Projects and experience
+- Awards and honors
+
+### Modify Styles
+
+Edit `css/style.css` to change:
+- Colors (CSS variables in `:root`)
+- Fonts and typography
+- Layout and spacing
+- Animations and effects
+
+### Add Functionality
+
+Edit `js/script.js` to add:
+- New interactive features
+- Additional animations
+- Custom behaviors
+
+For detailed customization guide, see `CUSTOMIZATION.md`.
+
+---
+
+## 📦 Deployment
+
+### Deploy to GitHub Pages
+
+1. **Ensure repository name is correct**:
+   - Repository: `namelesscrew.github.io`
+   - URL will be: `https://namelesscrew.github.io/`
+
+2. **Push to GitHub**:
+   ```bash
+   git add .
+   git commit -m "Update homepage"
+   git push origin main
+   ```
+
+3. **Enable GitHub Pages**:
+   - Go to repository Settings → Pages
+   - Source: `main` branch
+   - Click Save
+
+4. **Wait 2-5 minutes**, then visit your site!
+
+For detailed deployment instructions, see `QUICK_DEPLOY.md`.
+
+---
+
+## 🔍 SEO & Indexing
+
+### Included SEO Features
+
+✅ Complete meta tags (title, description, keywords)  
+✅ Open Graph tags (Facebook, LinkedIn)  
+✅ Twitter Card tags  
+✅ Canonical URL  
+✅ `robots.txt` for search engine crawlers  
+✅ `sitemap.xml` for site structure  
+✅ Semantic HTML5 structure  
+✅ Alt text for all images  
+✅ Responsive design (mobile-friendly)
+
+### Submit to Search Engines
+
+1. **Google Search Console**: https://search.google.com/search-console/
+2. **Bing Webmaster Tools**: https://www.bing.com/webmasters/
+3. **Baidu站长平台**: https://ziyuan.baidu.com/
+
+For complete SEO guide, see `DEPLOYMENT_GUIDE.md`.
+
+---
+
+## 📚 Documentation
+
+- 📖 **QUICK_DEPLOY.md** - Fast deployment guide (5 minutes)
+- 📖 **DEPLOYMENT_GUIDE.md** - Complete deployment & SEO tutorial
+- 📖 **CUSTOMIZATION.md** - How to customize content and styles
+- 📖 **START_HERE.md** - Project overview and quick reference
+- 📖 **FIX-URL-GUIDE.md** - How to fix repository URL issues
+
+---
+
+## 🛠️ Tech Stack
+
+- **HTML5** - Semantic markup
+- **CSS3** - Modern styling with flexbox/grid, animations, custom properties
+- **Vanilla JavaScript** - No frameworks, pure JS
+- **Font Awesome** - Icon library
+- **GitHub Pages** - Free hosting
+- **Git** - Version control
+
+---
+
+## 🌟 Highlights
+
+### Academic Achievements
+- 🎉 **CVPR 2026** paper accepted (first-author)
+- 🏆 Top 1% scholarship at Beijing Forestry University
+- 🥈 Multiple competition awards
+- 🔬 Research Assistant at prestigious GeWu-Lab
+
+### Technical Skills
+- 🤖 Robotic Manipulation
+- 🧠 Deep Learning & Reinforcement Learning
+- 🔄 Sim-to-Real Transfer
+- 💻 STM32, IoT, Computer Vision
+
+### Projects Portfolio
+1. **GeCo-SRT** - Sim-to-real transfer (CVPR 2026)
+2. **Wildlife Protection AI** - Deep learning for conservation
+3. **Safe Reinforcement Learning** - CBF integration
+4. **Battery Management System** - STM32 + IoT
+
+---
+
+## 📞 Contact
+
+- 📧 **Email**: universalmariner@outlook.com
+- 🐙 **GitHub**: [@NamelessCrew](https://github.com/NamelessCrew)
+- 📄 **CV**: [Download PDF](https://namelesscrew.github.io/CV_Wenbo_Yu.pdf)
+- 🎓 **Google Scholar**: [Profile](https://scholar.google.com)
+- 🌐 **Homepage**: [https://namelesscrew.github.io/](https://namelesscrew.github.io/)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+Feel free to use this template for your own academic homepage!
+
+---
+
+## 🙏 Acknowledgments
+
+- Template inspiration from [Jon Barron's website](https://jonbarron.info/)
+- Icons by [Font Awesome](https://fontawesome.com/)
+- Hosted on [GitHub Pages](https://pages.github.com/)
+
+---
+
+## 📊 Status
+
+- 🟢 **Site Status**: Live and running
+- 📅 **Last Updated**: February 2026
+- 🔄 **Actively Maintained**: Yes
+- 📝 **Content Complete**: Yes
+- 🎨 **Design Finalized**: Yes
+- 🔍 **SEO Optimized**: Yes
+
+---
+
+## 💡 Future Plans
+
+- [ ] Add blog section for research notes
+- [ ] Integrate Google Analytics
+- [ ] Add more interactive demos
+- [ ] Create video presentations of projects
+- [ ] Add multilingual support (Chinese version)
+
+---
+
+<div align="center">
+
+**⭐ If you find this helpful, consider giving it a star!**
+
+Made with ❤️ by Wenbo Yu
+
+[🌐 Visit Site](https://namelesscrew.github.io/) | [📧 Contact](mailto:universalmariner@outlook.com) | [📄 CV](https://namelesscrew.github.io/CV_Wenbo_Yu.pdf)
+
+</div>
