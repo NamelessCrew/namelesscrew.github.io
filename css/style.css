@@ -466,6 +466,29 @@ html {
     display: inline-block;
 }
 
+.pub-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 0.5rem;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-size: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.under-review {
+    color: #b45309;
+    font-weight: 600;
+    background: linear-gradient(120deg, rgba(180, 83, 9, 0.12) 0%, rgba(180, 83, 9, 0.05) 100%);
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(180, 83, 9, 0.2);
+    display: inline-block;
+}
+
 /* 会议名称特殊美化 */
 .conference-name {
     color: #dc2626;
