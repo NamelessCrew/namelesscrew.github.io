@@ -3,30 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wenbo Yu (余文博) - Robotic Manipulation & Robot Learning Researcher</title>
-    <meta name="description" content="Wenbo Yu (余文博) - Junior student at Beijing Forestry University, Research Assistant at GeWu-Lab. Research interests: Robotic Manipulation, Robot Learning, Sim-to-Real Transfer. CVPR 2026 paper accepted. Seeking Summer Research Internships and CS/Robotics PhD positions for Fall 2027.">
-    <meta name="keywords" content="Wenbo Yu, 余文博, Robotic Manipulation, Robot Learning, Embodied AI, Sim-to-Real Transfer, GeWu-Lab, Beijing Forestry University, CVPR 2026, PhD positions, Research Internship">
+    <title>Wenbo Yu (余文博) - Robot Learning & Agentic Robotics Researcher</title>
+    <meta name="description" content="Wenbo Yu (余文博) - Senior undergraduate student at Beijing Forestry University, Research Assistant at GeWu-Lab. Research interests: Robot Learning, Agentic Robotics, Sim-to-Real Transfer. CVPR 2026 paper accepted. Seeking CS/Robotics PhD positions for Fall 2027.">
+    <meta name="keywords" content="Wenbo Yu, 余文博, Robot Learning, Agentic Robotics, Embodied AI, Sim-to-Real Transfer, GeWu-Lab, Beijing Forestry University, CVPR 2026, PhD positions, Research Internship">
     <meta name="author" content="Wenbo Yu">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://namelesscrew.github.io/">
-    <meta property="og:title" content="Wenbo Yu (余文博) - Robotic Manipulation & Robot Learning">
-    <meta property="og:description" content="Research Assistant at GeWu-Lab. Focused on Robotic Manipulation and Robot Learning. CVPR 2026 paper accepted.">
+    <meta property="og:title" content="Wenbo Yu (余文博) - Robot Learning & Agentic Robotics">
+    <meta property="og:description" content="Research Assistant at GeWu-Lab. Focused on Robot Learning and Agentic Robotics. CVPR 2026 paper accepted.">
     <meta property="og:image" content="https://namelesscrew.github.io/images/profile-new.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://namelesscrew.github.io/">
-    <meta property="twitter:title" content="Wenbo Yu (余文博) - Robotic Manipulation & Robot Learning">
-    <meta property="twitter:description" content="Research Assistant at GeWu-Lab. Focused on Robotic Manipulation and Robot Learning. CVPR 2026 paper accepted.">
+    <meta property="twitter:title" content="Wenbo Yu (余文博) - Robot Learning & Agentic Robotics">
+    <meta property="twitter:description" content="Research Assistant at GeWu-Lab. Focused on Robot Learning and Agentic Robotics. CVPR 2026 paper accepted.">
     <meta property="twitter:image" content="https://namelesscrew.github.io/images/profile-new.jpg">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://namelesscrew.github.io/">
-    
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- 主题初始化（防止刷新时闪烁） -->
+    <script>
+        (function () {
+            var theme = localStorage.getItem('theme');
+            if (!theme) theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            if (theme === 'dark') document.documentElement.classList.add('dark');
+        })();
+    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -35,275 +49,274 @@
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#news" class="nav-link">News</a>
                 <a href="#publications" class="nav-link">Publications</a>
-                <a href="#projects" class="nav-link">Projects</a>
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#awards" class="nav-link">Awards</a>
             </div>
+            <button id="themeToggle" class="theme-toggle" title="Toggle Dark / Light Mode" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </nav>
 
     <main class="main-content">
-        <section id="home" class="section hero-section">
-            <div class="container">
-                <div class="hero-content">
+        <div class="layout" id="home">
+            <!-- 左侧固定栏：头像、名字、联系方式 -->
+            <aside class="sidebar">
+                <div class="hero-image">
+                    <img src="images/profile-new.jpg" alt="Wenbo Yu" class="profile-img">
+                </div>
+                <h1 class="hero-title name-title">
+                    <span class="name-en">Wenbo Yu</span>
+                    <span class="name-zh">余文博</span>
+                </h1>
+                <p class="sidebar-status">Senior Undergraduate Student</p>
+                <p class="sidebar-subtitle">Robot Learning · Agentic Robotics</p>
+                <div class="contact-links">
+                    <a href="mailto:uiversalmariner@gmail.com" class="contact-link" title="Email" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="CV_Wenbo_Yu.pdf" target="_blank" class="contact-link" title="CV" aria-label="CV">
+                        <span class="cv-text">CV</span>
+                    </a>
+                    <a href="https://github.com/universalmariner" target="_blank" class="contact-link" title="GitHub" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=BwA_8WQAAAAJ&hl=zh-CN" target="_blank" class="contact-link" title="Google Scholar" aria-label="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                </div>
+            </aside>
+
+            <!-- 右侧内容：自我介绍、News、Publications 等 -->
+            <div class="content">
+                <section class="section hero-section">
                     <div class="hero-text">
-                        <h1 class="hero-title">Wenbo Yu (余文博)</h1>
                         <p class="hero-description">
-                            I am a junior student at <a href="https://english.bjfu.edu.cn/" target="_blank" class="highlight-link">Beijing Forestry University</a>, majoring in Automation.
+                            I am a senior undergraduate student majoring in Automation at <a href="https://english.bjfu.edu.cn/" target="_blank" class="highlight-link">Beijing Forestry University</a>.
                         </p>
                         <p class="hero-description">
-                            I am also a member of <a href="https://gewu-lab.github.io/" target="_blank" class="highlight-link">GeWu-Lab</a>, 
-                            working closely with <a href="https://xwinks.github.io/" target="_blank" class="highlight-link">Wenke Xia</a> and 
-                            <a href="https://dtaoo.github.io/" target="_blank" class="highlight-link">Prof. Di Hu</a>.
+                            I am also a member of <a href="https://gewu-lab.github.io/" target="_blank" class="highlight-link">GeWu-Lab</a>, working closely with <a href="https://xwinks.github.io/" target="_blank" class="highlight-link">Wenke Xia</a> and <a href="https://dtaoo.github.io/" target="_blank" class="highlight-link">Prof. Di Hu</a>, and previously worked closely with <a href="https://chezhengping.xyz/" target="_blank" class="highlight-link">Zhengping Che</a> at <a href="https://www.x-humanoid.com/?lang=en" target="_blank" class="highlight-link">Beijing Innovation Center of Humanoid Robotics</a>.
                         </p>
                         <p class="hero-description">
-                            I will join <a href="https://arc-l.github.io/" target="_blank" class="highlight-link">ARC Lab@Rutgers University</a> as a Summer Research Intern advised by Prof. Jingjin Yu this summer.
+                            This past summer, I was fortunate to serve as a Summer Research Intern at the <a href="https://arc-l.github.io/" target="_blank" class="highlight-link">ARC Lab@Rutgers University</a>, advised by <a href="https://scholar.google.com/citations?user=jkRa2LEAAAAJ&hl=en" target="_blank" class="highlight-link">Prof. Jingjin Yu</a>.
                         </p>
                         <p class="hero-description">
-                            My research interests focus on <span class="highlight-keyword">Robotic Manipulation</span> and <span class="highlight-keyword">Robot Learning</span>.
+                            My research interests focus on <span class="highlight-keyword">Robot Learning</span> and <span class="highlight-keyword">Agentic Robotics</span>, with the primary goal of achieving <span class="highlight-goal">general and robust physical intelligence</span> in the complex real world.
                         </p>
-                        
+
                         <div class="looking-for-positions">
                             <p class="positions-text">
-                                <strong>🔍 I am actively seeking:</strong><br>
-                                • Research Internships<br>
-                                • CS/Robotics PhD positions starting Fall 2027<br>
+                                <strong>🔍 I am actively seeking CS/Robotics PhD positions starting Fall 2027.</strong>
                                 <em>Feel free to reach out anytime!</em>
                             </p>
                         </div>
-                        <div class="contact-links">
-                            <a href="mailto:uiversalmariner@gmail.com" class="contact-link" title="Email">
-                                <i class="fas fa-envelope"></i> Email
-                            </a>
-                            <a href="CV_June.pdf" target="_blank" class="contact-link" title="CV">
-                                <i class="fas fa-file-pdf"></i> CV
-                            </a>
-                            <a href="https://github.com/universalmariner" target="_blank" class="contact-link" title="GitHub">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="https://scholar.google.com/citations?user=BwA_8WQAAAAJ&hl=zh-CN" target="_blank" class="contact-link" title="Google Scholar">
-                                <i class="fas fa-graduation-cap"></i> Scholar
-                            </a>
-                        </div>
                     </div>
-                    <div class="hero-image">
-                        <img src="images/profile-new.jpg" alt="Wenbo Yu" class="profile-img">
-                        <p class="profile-caption">Wenbo Yu</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section id="news" class="section">
-            <div class="container">
-                <h2 class="section-title">Latest News</h2>
-                <div class="news-list">
-                    <div class="news-item">
-                        <span class="news-date">2026-02</span>
-                        <p class="news-content">
-                            <strong class="conference-name">🎉 CVPR 2026</strong> - Our paper "GeCo-SRT: Geometry-aware Continual Adaptation for Robotic Cross-Task Sim-to-Real Transfer" has been accepted! 
-                            Thanks to all co-authors!
-                        </p>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">2025-04</span>
-                        <p class="news-content">
-                            <strong class="conference-name">CHI 2025</strong> - Served as a Student Volunteer at ACM CHI Conference in Yokohama, Japan.
-                        </p>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">2024-12</span>
-                        <p class="news-content">
-                            <strong>Research</strong> - Started research at GeWu-Lab, Renmin University of China as a Research Assistant.
-                        </p>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">2024-12</span>
-                        <p class="news-content">
-                            <strong>Award</strong> - Received Second Prize in Beijing Division of China International College Students' Innovation Competition 2024.
-                        </p>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">2024-11</span>
-                        <p class="news-content">
-                            <strong>Scholarship</strong> - Awarded First Class Scholarship for Outstanding Students (Top 1%) at Beijing Forestry University.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="publications" class="section">
-            <div class="container">
-                <h2 class="section-title">Publications</h2>
-                
-                <div class="publications-list">
-                    <div class="publication-item">
-                        <div class="pub-image">
-                            <img src="images/geco-srt.png" alt="GeCo-SRT">
-                        </div>
-                        <div class="pub-content">
-                            <h3 class="pub-title">GeCo-SRT: Geometry-aware Continual Adaptation for Robotic Cross-Task Sim-to-Real Transfer</h3>
-                            <p class="pub-authors"><span class="author-me">Wenbo Yu*</span>, Wenke Xia*, Weitao Zhang, Di Hu</p>
-                            <p class="pub-venue"><span class="conference-name">CVPR 2026</span></p>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2602.20871" target="_blank" class="pub-link">arXiv</a>
-                                <a href="https://github.com/NamelessCrew/GeCo-SRT" target="_blank" class="pub-link">Code</a>
+                <section id="news" class="section">
+                    <div class="container">
+                        <h2 class="section-title">Latest News</h2>
+                        <div class="news-list">
+                            <div class="news-item">
+                                <span class="news-date">2026-09</span>
+                                <p class="news-content">
+                                    <strong class="conference-name">🎉 CoRL 2026</strong> - Two papers ("Robo-ValueRL" & "Barrier-Constrained Guidance For Real-time Asynchronous VLA Execution") have been accepted!
+                                    Thanks to all co-authors!
+                                </p>
+                            </div>
+                            <div class="news-item">
+                                <span class="news-date">2026-06</span>
+                                <p class="news-content">
+                                    <strong>Research</strong> - Started research at Rutgers University as a summer intern.
+                                </p>
+                            </div>
+                            <div class="news-item">
+                                <span class="news-date">2026-02</span>
+                                <p class="news-content">
+                                    <strong class="conference-name">🎉 CVPR 2026</strong> - Our paper "GeCo-SRT: Geometry-aware Continual Adaptation for Robotic Cross-Task Sim-to-Real Transfer" has been accepted!
+                                    Thanks to all co-authors!
+                                </p>
+                            </div>
+                            <div class="news-item">
+                                <span class="news-date">2025-04</span>
+                                <p class="news-content">
+                                    <strong class="conference-name">CHI 2025</strong> - Served as a Student Volunteer at ACM CHI Conference in Yokohama, Japan.
+                                </p>
+                            </div>
+                            <div class="news-item">
+                                <span class="news-date">2024-12</span>
+                                <p class="news-content">
+                                    <strong>Research</strong> - Started research at GeWu-Lab, Renmin University of China as a Research Assistant.
+                                </p>
+                            </div>
+                            <div class="news-item">
+                                <span class="news-date">2024-12</span>
+                                <p class="news-content">
+                                    <strong>Award</strong> - Received Second Prize in Beijing Division of China International College Students' Innovation Competition 2024.
+                                </p>
+                            </div>
+                            <div class="news-item">
+                                <span class="news-date">2024-11</span>
+                                <p class="news-content">
+                                    <strong>Scholarship</strong> - Awarded First Class Scholarship for Outstanding Students (Top 1%) at Beijing Forestry University.
+                                </p>
                             </div>
                         </div>
                     </div>
+                </section>
 
-                    <div class="publication-item">
-                        <div class="pub-image">
-                            <img src="images/a2a-teaser.png" alt="Affordance2Action">
-                        </div>
-                        <div class="pub-content">
-                            <h3 class="pub-title">Affordance2Action: Task-Conditioned Scene-level Affordance Grounding for Real-Time Manipulation</h3>
-                            <p class="pub-authors">Litao Liu*, Yifan Han*, Pengfei Yi, <span class="author-me">Wenbo Yu</span>, Hanqing Wang, Haoran Du, Enze Yuan, Zilin Yuan, Ruiding Feng, Michael Liu, Qi Zhang, Jingjin Yu</p>
-                            <p class="pub-venue"><span class="under-review">Under Review</span></p>
-                            <p class="pub-description" style="margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.95rem;">
-                                This work was completed during their internship at Rutgers University–New Brunswick.
-                            </p>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2606.04172" target="_blank" class="pub-link">arXiv</a>
-                                <a href="https://arc-l.github.io/a2a/" target="_blank" class="pub-link">Project</a>
-                                <a href="https://github.com/arc-l/a2a" target="_blank" class="pub-link">Code</a>
+                <section id="publications" class="section">
+                    <div class="container">
+                        <h2 class="section-title">Selected Publications</h2>
+
+                        <div class="publications-list">
+                            <div class="publication-item">
+                                <div class="pub-image">
+                                    <img src="images/geco-srt.png" alt="GeCo-SRT">
+                                </div>
+                                <div class="pub-content">
+                                    <h3 class="pub-title">GeCo-SRT: Geometry-aware Continual Adaptation for Robotic Cross-Task Sim-to-Real Transfer <span class="conference-name">CVPR 2026</span></h3>
+                                    <p class="pub-authors"><span class="author-me">Wenbo Yu*</span>, Wenke Xia*, Weitao Zhang, Di Hu</p>
+                                    <div class="pub-links">
+                                        <a href="https://arxiv.org/abs/2602.20871" target="_blank" class="pub-link">arXiv</a>
+                                        <a href="https://github.com/NamelessCrew/GeCo-SRT" target="_blank" class="pub-link">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="publication-item">
+                                <div class="pub-image">
+                                    <img src="images/robo-valuerl.jpg" alt="Robo-ValueRL">
+                                </div>
+                                <div class="pub-content">
+                                    <h3 class="pub-title">Robo-ValueRL: Reliable Value Estimation for Offline-to-Online Reinforcement Learning <span class="conference-name">CoRL 2026</span></h3>
+                                    <p class="pub-authors">Wenke Xia*, Pei Ren*, <span class="author-me">Wenbo Yu</span>, Yizhuo Zhang, Jifan Li, Yixue Zhang, Yinuo Zhao, Qingyang Gao, Jianlong Fu, Jian Tang, Ji-Rong Wen, Zhengping Che, Di Hu</p>
+                                    <div class="pub-links">
+                                        <a href="https://arxiv.org/abs/2607.09866" target="_blank" class="pub-link">arXiv</a>
+                                        <a href="https://gewu-lab.github.io/Robo-ValueRL/" target="_blank" class="pub-link">Project</a>
+                                        <a href="https://github.com/Open-X-Humanoid/Robo-ValueRL" target="_blank" class="pub-link">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="publication-item">
+                                <div class="pub-image">
+                                    <img src="images/barrier-constrained.png" alt="Barrier-Constrained Guidance">
+                                </div>
+                                <div class="pub-content">
+                                    <h3 class="pub-title">Barrier-Constrained Guidance For Real-time Asynchronous VLA Execution <span class="conference-name">CoRL 2026</span></h3>
+                                    <p class="pub-authors"><span class="author-me">Wenbo Yu</span>*, Jifan Li*, Wenke Xia, Yuchen Li, Yizhuo Zhang, Pei Ren, Zhengping Che†, Di Hu†</p>
+                                    <div class="pub-links">
+                                        <a href="https://github.com/NamelessCrew/FreeBar" target="_blank" class="pub-link">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="publication-item">
+                                <div class="pub-image">
+                                    <img src="images/a2a-teaser.png" alt="Affordance2Action">
+                                </div>
+                                <div class="pub-content">
+                                    <h3 class="pub-title">Affordance2Action: Task-Conditioned Scene-level Affordance Grounding for Real-Time Manipulation <span class="under-review">Under Review</span></h3>
+                                    <p class="pub-authors">Litao Liu*, Yifan Han*, Pengfei Yi, <span class="author-me">Wenbo Yu</span>, Hanqing Wang, Haoran Du, Enze Yuan, Zilin Yuan, Ruiding Feng, Michael Liu, Qi Zhang, Jingjin Yu</p>
+                                    <p class="pub-description" style="margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.95rem;">
+                                        This work was completed during their internship at Rutgers University–New Brunswick.
+                                    </p>
+                                    <div class="pub-links">
+                                        <a href="https://arxiv.org/abs/2606.04172" target="_blank" class="pub-link">arXiv</a>
+                                        <a href="https://arc-l.github.io/a2a/" target="_blank" class="pub-link">Project</a>
+                                        <a href="https://github.com/arc-l/a2a" target="_blank" class="pub-link">Code</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </section>
 
-                    <div class="publication-item">
-                        <div class="pub-image">
-                            <img src="images/barrier-constrained.png" alt="Barrier-Constrained Guidance">
-                        </div>
-                        <div class="pub-content">
-                            <h3 class="pub-title">Barrier-Constrained Guidance For Real-time Asynchronous VLA Execution</h3>
-                            <p class="pub-authors"><span class="author-me">Wenbo Yu</span> et al. </p>
-                            <p class="pub-venue"><span class="under-review">Under Review</span></p>
+                <section id="experience" class="section">
+                    <div class="container">
+                        <h2 class="section-title">Experience</h2>
+                        <div class="publications-list">
+                            <div class="publication-item">
+                                <div class="pub-image">
+                                    <img src="images/ruc-logo.jpg" alt="GeWu-Lab">
+                                </div>
+                                <div class="pub-content">
+                                    <h3 class="pub-title">Research Assistant</h3>
+                                    <p class="pub-authors">GeWu-Lab, Renmin University of China</p>
+                                    <p class="pub-venue">Dec 2024 - Present</p>
+                                </div>
+                            </div>
+
+                            <div class="publication-item">
+                                <div class="pub-image">
+                                    <img src="images/x-humanoid-logo.png" alt="Beijing Innovation Center of Humanoid Robotics">
+                                </div>
+                                <div class="pub-content">
+                                    <h3 class="pub-title">Research Intern</h3>
+                                    <p class="pub-authors">Beijing Innovation Center of Humanoid Robotics</p>
+                                    <p class="pub-venue">Apr 2026 - Jul 2026</p>
+                                </div>
+                            </div>
+
+                            <div class="publication-item">
+                                <div class="pub-image">
+                                    <img src="images/rutgers-logo.png" alt="ARC Lab, Rutgers University">
+                                </div>
+                                <div class="pub-content">
+                                    <h3 class="pub-title">Summer Research Intern</h3>
+                                    <p class="pub-authors">ARC Lab, Rutgers University</p>
+                                    <p class="pub-venue">Summer 2026</p>
+                                </div>
+                            </div>
+
+                            <div class="publication-item">
+                                <div class="pub-image">
+                                    <img src="images/bfu-logo.png" alt="Beijing Forestry University">
+                                </div>
+                                <div class="pub-content">
+                                    <h3 class="pub-title">Bachelor of Engineering</h3>
+                                    <p class="pub-authors">Beijing Forestry University</p>
+                                    <p class="pub-venue">Sep 2023 - Jun 2027 (Expected)</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
+
+                <section id="awards" class="section">
+                    <div class="container">
+                        <h2 class="section-title">Honors & Awards</h2>
+                        <div class="news-list">
+                            <div class="news-item">
+                                <span class="news-date">2024</span>
+                                <p class="news-content">
+                                    <strong>First Class Scholarship for Outstanding Students</strong> (Top 1%), Beijing Forestry University
+                                </p>
+                            </div>
+                            <div class="news-item">
+                                <span class="news-date">2024</span>
+                                <p class="news-content">
+                                    <strong>Science and Technology Innovation Scholarship</strong>, Beijing Forestry University
+                                </p>
+                            </div>
+                            <div class="news-item">
+                                <span class="news-date">2024</span>
+                                <p class="news-content">
+                                    <strong>Second Prize (Beijing Division)</strong>, China International College Students' Innovation Competition
+                                </p>
+                            </div>
+                            <div class="news-item">
+                                <span class="news-date">2024 & 2025</span>
+                                <p class="news-content">
+                                    <strong>Third Prize</strong>, "TI Cup" Beijing College Student Electronic Design Competition
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <div class="publications-list">
-                    <div class="publication-item">
-                        <div class="pub-image">
-                            <img src="images/wildlife.png" alt="Wildlife Protection">
-                        </div>
-                        <div class="pub-content">
-                            <h3 class="pub-title">Wildlife Protection with AI</h3>
-                            <p class="pub-authors">Core Team Member | May 2024 - Dec 2024</p>
-                            <p class="pub-venue">Beijing Forestry University</p>
-                            <p class="pub-description" style="margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.95rem;">
-                                Optimized deep learning models for wildlife classification and tracking in infrared imagery. 
-                                Deployed field monitoring equipment and conducted large-scale data preprocessing.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="publication-item">
-                        <div class="pub-image">
-                            <img src="images/safe-rl.png" alt="Safe Reinforcement Learning">
-                        </div>
-                        <div class="pub-content">
-                            <h3 class="pub-title">Safe Reinforcement Learning</h3>
-                            <p class="pub-authors">Research Project | May 2024 - Jan 2025</p>
-                            <p class="pub-venue">Beijing Forestry University (Advisor: Prof. Junguo Zhang)</p>
-                            <p class="pub-description" style="margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.95rem;">
-                                Enhanced Actor-Critic architecture by integrating Control Barrier Functions (CBF) and risk-aware models 
-                                for safe trajectory planning in complex environments.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="publication-item">
-                        <div class="pub-image">
-                            <img src="images/bms-project.png" alt="Battery Management System">
-                        </div>
-                        <div class="pub-content">
-                            <h3 class="pub-title">Lithium Battery Management System</h3>
-                            <p class="pub-authors">Team Project | Sep 2024 - Jan 2025</p>
-                            <p class="pub-venue">Beijing Forestry University</p>
-                            <p class="pub-description" style="margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.95rem;">
-                                Designed and implemented an STM32-based 18650 battery charging/discharging management system with IoT monitoring. 
-                                Integrated IP5508 power management, INA3221 multi-channel monitoring, and ESP-12S Wi-Fi module for remote data transmission via WeChat Mini Program.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section">
-            <div class="container">
-                <h2 class="section-title">Experience</h2>
-                <div class="publications-list">
-                    <div class="publication-item">
-                        <div class="pub-image">
-                            <img src="images/ruc-logo.jpg" alt="GeWu-Lab">
-                        </div>
-                        <div class="pub-content">
-                            <h3 class="pub-title">Research Assistant</h3>
-                            <p class="pub-authors">GeWu-Lab, Renmin University of China</p>
-                            <p class="pub-venue">Dec 2024 - Present</p>
-                            <p class="pub-description" style="margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.95rem;">
-                                Working on sim-to-real transfer and robotic manipulation under the supervision of Prof. Di Hu.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="publication-item">
-                        <div class="pub-image">
-                            <img src="images/bfu-logo.png" alt="Beijing Forestry University">
-                        </div>
-                        <div class="pub-content">
-                            <h3 class="pub-title">Bachelor of Engineering</h3>
-                            <p class="pub-authors">Beijing Forestry University</p>
-                            <p class="pub-venue">Sep 2023 - Jun 2027 (Expected)</p>
-                            <p class="pub-description" style="margin-top: 0.5rem; color: var(--text-secondary); font-size: 0.95rem;">
-                                Major in Automation.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="awards" class="section">
-            <div class="container">
-                <h2 class="section-title">Honors & Awards</h2>
-                <div class="news-list">
-                    <div class="news-item">
-                        <span class="news-date">2024</span>
-                        <p class="news-content">
-                            <strong>First Class Scholarship for Outstanding Students</strong> (Top 1%), Beijing Forestry University
-                        </p>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">2024</span>
-                        <p class="news-content">
-                            <strong>Science and Technology Innovation Scholarship</strong>, Beijing Forestry University
-                        </p>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">2024</span>
-                        <p class="news-content">
-                            <strong>Second Prize (Beijing Division)</strong>, China International College Students' Innovation Competition
-                        </p>
-                    </div>
-                    <div class="news-item">
-                        <span class="news-date">2024 & 2025</span>
-                        <p class="news-content">
-                            <strong>Third Prize</strong>, "TI Cup" Beijing College Student Electronic Design Competition
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
 
     <!-- Back to Top Button -->
@@ -320,8 +333,8 @@
                     <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=a8a9duv6IXl7SmOKZymmPL7NmKR7bH2Z6qVu9o_rras&cl=ffffff&w=a"></script>
                 </div>
             </div>
-            
-            <p style="margin-top: 2rem;">Last Updated: June 2026</p>
+
+            <p style="margin-top: 2rem;">Last Updated: September 2026</p>
             <p>
                 Thanks to <a href="https://jonbarron.info/" target="_blank">Jon Barron</a> for the website template inspiration
             </p>

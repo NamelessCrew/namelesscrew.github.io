@@ -39,6 +39,13 @@ body {
     padding: 1rem 0;
     z-index: 1000;
     box-shadow: var(--shadow);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-links {
@@ -76,13 +83,38 @@ body {
     width: 100%;
 }
 
+/* 黑白主题切换按钮 */
+.theme-toggle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
 /* 主要内容区域 */
 .main-content {
     min-height: calc(100vh - 200px);
 }
 
 .section {
-    padding: 4rem 0;
+    padding: 1rem 0;
 }
 
 .section:nth-child(even) {
@@ -92,7 +124,7 @@ body {
 .section-title {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 0.6rem;
     color: var(--text-primary);
     position: relative;
     padding-bottom: 0.5rem;
@@ -130,8 +162,8 @@ body {
 .hero-description {
     font-size: 1.125rem;
     color: var(--text-secondary);
-    margin-bottom: 1rem;
-    line-height: 1.8;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
 }
 
 .contact-links {
@@ -150,7 +182,7 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 0.5rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease, color 0.3s ease;
     font-weight: 500;
 }
 
@@ -193,7 +225,7 @@ body {
     background-color: var(--bg-primary);
     border-radius: 0.5rem;
     box-shadow: var(--shadow);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .news-item:hover {
@@ -225,7 +257,7 @@ body {
 .publications-list {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.25rem;
 }
 
 .publication-item {
@@ -236,7 +268,7 @@ body {
     background-color: var(--bg-primary);
     border-radius: 0.5rem;
     box-shadow: var(--shadow);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .publication-item:hover {
@@ -266,6 +298,13 @@ body {
     color: var(--primary-color);
     font-weight: 500;
     margin-bottom: 1rem;
+}
+
+/* 论文状态徽标：紧随标题之后 */
+.pub-title .conference-name,
+.pub-title .under-review {
+    font-size: 0.75rem;
+    vertical-align: middle;
 }
 
 .pub-links {
@@ -387,7 +426,7 @@ body {
     }
 
     .section {
-        padding: 2rem 0;
+        padding: 0.75rem 0;
     }
 
     .profile-img {
@@ -414,6 +453,23 @@ html {
 
 .highlight-keyword:hover {
     background: linear-gradient(120deg, rgba(37, 99, 235, 0.2) 0%, rgba(37, 99, 235, 0.1) 100%);
+    transform: translateY(-1px);
+}
+
+/* 研究目标特殊高亮（紫色，区别于蓝色关键词） */
+.highlight-goal {
+    color: #7c3aed;
+    font-weight: 700;
+    padding: 2px 6px;
+    background: linear-gradient(120deg, rgba(124, 58, 237, 0.1) 0%, rgba(124, 58, 237, 0.05) 100%);
+    border-radius: 4px;
+    border-bottom: 2px solid rgba(124, 58, 237, 0.4);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.highlight-goal:hover {
+    background: linear-gradient(120deg, rgba(124, 58, 237, 0.2) 0%, rgba(124, 58, 237, 0.1) 100%);
     transform: translateY(-1px);
 }
 
@@ -574,36 +630,36 @@ html {
 }
 /* 求职信息样式 */
 .looking-for-positions {
-    margin-top: 1.5rem;
-    padding: 1.5rem;
+    margin-top: 1.25rem;
+    padding: 0.875rem 1.125rem;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 12px;
+    border-radius: 10px;
     box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
     animation: pulse-glow 3s ease-in-out infinite;
 }
 
 .positions-text {
     color: white;
-    font-size: 1.05rem;
-    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.7;
     margin: 0;
 }
 
 .positions-text strong {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
     display: inline-block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
 }
 
 .positions-text br {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
 }
 
 .positions-text em {
     display: block;
-    margin-top: 0.8rem;
-    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
     opacity: 0.95;
@@ -621,15 +677,15 @@ html {
 /* 响应式设计 */
 @media (max-width: 768px) {
     .looking-for-positions {
-        padding: 1.2rem;
+        padding: 0.75rem 1rem;
     }
-    
+
     .positions-text {
         font-size: 0.95rem;
     }
-    
+
     .positions-text strong {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 }
 
@@ -673,8 +729,290 @@ html {
         padding: 1rem;
         margin: 1rem;
     }
-    
+
     .visitor-map h3 {
         font-size: 1.2rem;
+    }
+}
+
+/* ============================================
+   新版布局：左侧固定栏 + 右侧内容
+   ============================================ */
+.layout {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem 0 0;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.sidebar {
+    position: sticky;
+    top: 5rem;
+    text-align: left;
+    padding-top: 3rem;
+}
+
+.sidebar .hero-image {
+    text-align: left;
+}
+
+.sidebar .profile-img {
+    width: 200px;
+    height: 200px;
+}
+
+/* 名字：正常显示英文，悬停时右侧浮现中文 */
+.name-title {
+    font-family: 'Playfair Display', 'Noto Serif SC', 'Songti SC', serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin: 1.25rem 0 0.25rem;
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+.name-zh {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-10px, -50%);
+    margin-left: 0.75rem;
+    white-space: nowrap;
+    font-family: 'Noto Serif SC', 'Songti SC', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.name-title:hover .name-zh {
+    opacity: 1;
+    transform: translate(0, -50%);
+}
+
+.sidebar-status {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.sidebar-subtitle {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+/* 侧边栏联系方式：横向小图标 */
+.sidebar .contact-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0;
+}
+
+.sidebar .contact-link {
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.15rem;
+}
+
+.cv-text {
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+}
+
+/* 右侧内容区 */
+.content .hero-section {
+    padding: 2rem 0 0.5rem;
+}
+
+/* 响应式：小屏幕时侧边栏移到顶部 */
+@media (max-width: 968px) {
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .sidebar {
+        position: static;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .sidebar .hero-image {
+        text-align: center;
+    }
+
+    .name-title {
+        display: inline-flex;
+        align-items: baseline;
+    }
+
+    .name-zh {
+        position: static;
+        transform: none;
+        margin-left: 0.5rem;
+        opacity: 1;
+    }
+
+    .sidebar .contact-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content .hero-section {
+        padding: 1rem 0;
+    }
+}
+
+/* ============================================
+   深色主题（黑白切换）
+   ============================================ */
+html.dark {
+    --primary-color: #60a5fa;
+    --text-primary: #e5e7eb;
+    --text-secondary: #9ca3af;
+    --bg-primary: #111827;
+    --bg-secondary: #1f2937;
+    --border-color: #374151;
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6), 0 4px 6px -2px rgba(0, 0, 0, 0.5);
+}
+
+body,
+.section,
+.footer {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ============================================
+   News 纵向时间轴样式
+   ============================================ */
+/* 去掉该板块的交替背景 */
+#news,
+#experience {
+    background-color: transparent;
+}
+
+#news .news-list {
+    gap: 0;
+}
+
+/* 三列布局：日期 | 竖线槽 | 内容 */
+#news .news-item {
+    display: grid;
+    grid-template-columns: 5rem 1.75rem 1fr;
+    gap: 0;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+#news .news-item:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* 竖线段：占满条目高度的第二列，自动与上下条目衔接 */
+#news .news-item::before {
+    content: '';
+    grid-column: 2;
+    grid-row: 1;
+    width: 2px;
+    justify-self: center;
+    background: var(--border-color);
+}
+
+/* 圆点：与竖线同列居中，天然对齐 */
+#news .news-item::after {
+    content: '';
+    grid-column: 2;
+    grid-row: 1;
+    width: 10px;
+    height: 10px;
+    margin-top: 0.35rem;
+    justify-self: center;
+    border-radius: 50%;
+    background: var(--primary-color);
+    border: 2px solid var(--bg-primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+#news .news-date {
+    padding-top: 0.25rem;
+    padding-right: 0.5rem;
+    text-align: right;
+    font-size: 0.85rem;
+}
+
+#news .news-content {
+    font-size: 0.9rem;
+    padding-bottom: 0.75rem;
+}
+
+/* ============================================
+   Experience 三列并排布局
+   ============================================ */
+#experience .publications-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 1.25rem;
+}
+
+#experience .publication-item {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+#experience .pub-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110px;
+}
+
+#experience .pub-image img {
+    width: auto;
+    max-width: 150px;
+    max-height: 110px;
+    object-fit: contain;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#experience .pub-title {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+#experience .pub-authors,
+#experience .pub-venue {
+    margin-bottom: 0;
+}
+
+/* 小屏幕时恢复纵向排列 */
+@media (max-width: 968px) {
+    #experience .publications-list {
+        flex-direction: column;
     }
 }

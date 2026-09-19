@@ -1,18 +1,15 @@
-// 平滑滚动和导航高亮
+// 页面功能脚本
 document.addEventListener('DOMContentLoaded', function() {
-    // 获取所有导航链接和部分
+    // ===== 导航：点击平滑滚动 + 滚动高亮 =====
     const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('.section');
+    const sections = document.querySelectorAll('#home, #news, #publications, #experience, #awards');
 
-    // 导航点击事件
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
+            const targetSection = document.querySelector(this.getAttribute('href'));
             if (targetSection) {
-                const offsetTop = targetSection.offsetTop - 80;
+                const offsetTop = targetSection.getBoundingClientRect().top + window.scrollY - 80;
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
@@ -27,90 +24,58 @@ document.addEventListener('DOMContentLoaded', function() {
         const scrollPosition = window.scrollY + 100;
 
         sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            
+            const rect = section.getBoundingClientRect();
+            const sectionTop = rect.top + window.scrollY;
+            const sectionHeight = rect.height;
+
             if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
                 current = section.getAttribute('id');
             }
         });
 
         navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
+            link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
         });
     }
 
-    // 监听滚动事件
     let scrollTimeout;
     window.addEventListener('scroll', function() {
         if (scrollTimeout) {
             window.cancelAnimationFrame(scrollTimeout);
         }
-        scrollTimeout = window.requestAnimationFrame(function() {
-            updateActiveNav();
-        });
+        scrollTimeout = window.requestAnimationFrame(updateActiveNav);
     });
 
     // 初始化时更新一次
     updateActiveNav();
 
-    // 为论文项添加淡入动画
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
-    };
-
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '0';
-                entry.target.style.transform = 'translateY(20px)';
-                
-                setTimeout(() => {
-                    entry.target.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }, 100);
-                
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    // 观察所有论文项和新闻项
-    document.querySelectorAll('.publication-item, .news-item').forEach(item => {
-        observer.observe(item);
-    });
-
-    // 添加移动端菜单切换（如果需要）
+    // 导航栏阴影随滚动增强
     const navbar = document.querySelector('.navbar');
-    let lastScroll = 0;
-
     window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-        
-        if (currentScroll <= 0) {
-            navbar.style.boxShadow = '0 1px 3px 0 rgba(0, 0, 0, 0.1)';
-        } else {
-            navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
-        }
-        
-        lastScroll = currentScroll;
+        navbar.style.boxShadow = window.pageYOffset > 0
+            ? '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+            : '0 1px 3px 0 rgba(0, 0, 0, 0.1)';
     });
-});
 
-// 添加一个简单的统计功能（可选）
-function countPublications() {
-    const publications = document.querySelectorAll('.publication-item');
-    return publications.length;
-}
+    // ===== 黑白主题切换 =====
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('i');
+    const isDark = () => document.documentElement.classList.contains('dark');
+
+    themeToggle.addEventListener('click', () => {
+        const dark = !isDark();
+        document.documentElement.classList.toggle('dark', dark);
+        localStorage.setItem('theme', dark ? 'dark' : 'light');
+        themeIcon.className = dark ? 'fas fa-sun' : 'fas fa-moon';
+    });
+
+    // 同步按钮图标
+    themeIcon.className = isDark() ? 'fas fa-sun' : 'fas fa-moon';
+});
 
 // 在控制台输出一些有趣的信息
 console.log('🎓 Welcome to my academic homepage!');
-console.log(`📚 Currently showcasing ${countPublications()} publications`);
+console.log(`📚 Currently showcasing ${document.querySelectorAll('.publication-item').length} publications`);
 
 // 回到顶部按钮功能
 const backToTopButton = document.getElementById('backToTop');
