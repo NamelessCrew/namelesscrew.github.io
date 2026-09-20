@@ -344,6 +344,13 @@ body {
     flex-wrap: wrap;
 }
 
+/* Academic Services 分组并排 */
+.services-columns {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
 .service-item {
     padding: 0.5rem 1rem;
     background-color: var(--bg-primary);
@@ -903,6 +910,7 @@ body,
    ============================================ */
 /* 去掉该板块的交替背景 */
 #news,
+#services,
 #experience {
     background-color: transparent;
 }
@@ -956,6 +964,8 @@ body,
     padding-right: 0.5rem;
     text-align: right;
     font-size: 0.85rem;
+    /* 数字等宽，保证各日期宽度一致、边缘对齐 */
+    font-variant-numeric: tabular-nums;
 }
 
 #news .news-content {
